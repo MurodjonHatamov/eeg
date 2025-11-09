@@ -1,0 +1,220 @@
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+.navLearing .container{
+
+margin-top: 20px;
+border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbarLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2e80b6;
+    letter-spacing: 3px; 
+}
+
+
+/* Menu */
+
+.menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menuBtn, .activeBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menuBtn:hover, .activeBtn:hover {
+    background-color: rgba(129, 128, 128, 0.158);  
+  }
+  
+  .line1, .line2, .line3 {
+    background-color: rgba(27, 27, 27, 0.771);
+    width: 30px;
+    height: 3px;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+  }
+  
+  .activeBtn .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .activeBtn .line2 {
+    opacity: 0;
+  }
+  
+  .activeBtn .line3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  
+  .menuBlock {
+    position: absolute;
+    top: 150%;
+right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    min-width: 200px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+    box-shadow: 4px 4px 25px 5px rgba(0, 0, 0, .32); 
+  }
+  
+  .menuBlock.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .menuItem {
+padding: 10px 15px;
+    cursor: pointer;
+    color: #4d4d4d;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .menuItem:hover {
+    background-color: rgba(129, 128, 128, 0.158);
+  }
+  
+
+
+/* header */
+.learingHeder{
+    position: static;
+    top: 40px;
+    display: flex;
+    height: 40vh;
+    max-height: 780px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    color: #fff;
+}
+
+.headerText{
+    font-size: 5rem;
+}
+.headerButton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.headerButton button{
+    display: inline-block;
+
+    padding: 12px 30px;
+    border-radius: 4px;
+    background-color: #92a0ad;
+ border: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.headerButton button:hover{
+    background-color: #69b9ff;
+}
+.learingContent .container  {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.learingContent .container h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    color: #2e80b6;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.learingContent .container p{
+    display: block;
+    max-width: 940px;
+    margin: 10px 0 0;
+    padding: 10px 0 5px;
+    color: #030405;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    text-transform: none;
+}
+
+.learingContent .container img{
+    max-width: 260px;
+}
+
+
+@media (max-width: 768px) {
+    .headerText{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .headerButton button{
+
+
+        padding: 12px 10px;
+        border-radius: 4px;
+        background-color: #92a0ad;
+     border: none;
+        color: #fff;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+  }
+  

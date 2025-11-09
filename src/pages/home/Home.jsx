@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Home.module.css'
 import LessonCard from '../../components/lessonCard/LessonCard'
+import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className={styles.home}>
@@ -33,7 +34,9 @@ function Home() {
 
     {
         [1,2,3,4,5,6,7,8,9,10,11,12].map((item)=>(
-<LessonCard/>
+<Link to={"/learing"}>
+<LessonCard key={item}/>
+</Link>
         ))}
     
 
