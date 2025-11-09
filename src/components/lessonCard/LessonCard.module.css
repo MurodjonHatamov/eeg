@@ -1,0 +1,41 @@
+.LessonCard{
+    background-color:#2e80b6 ;
+    min-width: 250px;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+cursor: pointer;
+min-height:280px;
+transition: all 0.3s ease;
+
+
+}
+.LessonCard:hover{
+  background-color: #e64c40;  ;
+    
+}
+.LessonCard img{
+    max-width: 80px;
+    margin-bottom: 30px;
+}
+
+
+.lessonTitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 3px; 
+}
+@media (max-width: 768px) {
+    .LessonCard{
+        min-width: 100%;
+
+    }
+  }
+  
